@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divergence Shifter - Octet</title>
+
+    <meta name="author" content="Kyouin">
+    <meta name="description" content="Patch italiana di Steins;Gate 8BIT - Variant Space Octet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="icon" href="../resources/images/octet_icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body onload="onLoad()">
+    <!--  Track to be streamed in background  -->
+    <audio autoplay loop id="audio"><source src="../resources/sounds/octet_gos.mp3" type="audio/mp3"></audio>
+
+    <!--  Useful stuff just to hide everything until load  -->
+    <div style="display: none" id="hide"></div>
+    <script type="text/javascript">document.getElementById("hide").style.display = "block";</script>
+
+    <!--  All the visible stuff  -->
+    <div class="container">
+        <img class="img-fluid mx-auto d-block my-3" src="../resources/images/octet_logo.png" alt="Logo" onclick="toggleAudio()">
+
+        <div class="text-center">
+            <img class="img-fluid mb-5" src="../resources/images/octet_preview_1.png" alt="Preview 1">
+
+            <p>Steins;Gate 8BIT - Variant Space Octet è una visual novel non canonica rilasciata nel 2011 dalla 5pb. e ambientata in seguito agli eventi di Steins;Gate.</p>
+            <p>Grazie a questa patch italiana, non richiede il settaggio della lingua non Unicode in Giapponese.</p>
+
+            <img class="img-fluid my-5" src="../resources/images/octet_preview_2.png" alt="Preview 2">
+
+            <p class="h4 mb-3">Come giocare</p>
+            <p>Muoviti tra le strade di Akihabara, guardati intorno e parla con le persone che incontri.</p>
+            <p>Usa il telefono o chiama la tua assistente per ottenere indizi.</p>
+            <p>Scopri easter egg senza finire in GAME OVER.</p>
+
+            <p class="h4 mt-5 mb-3">Collegamenti</p>
+            <p><a href="https://github.com/divergenceshifter/divergenceshifter.github.io/releases/octet/download/Variant.Space.Octet.Setup.exe">Download</a></p>
+            <p><a href="https://github.com/divergenceshifter/divergenceshifter.github.io/issues/new">Effettua una segnalazione</a></p>
+            <p><a href="http://paypal.me/Kyouin">Effettua una donazione</a></p>
+
+            <p class="small my-5">Clicca <u onclick="toggleAudio()">qui</u>, o sul logo, per attivare o disattivare la musica.</p>
+
+            <img class="fixed-bottom img-fluid d-block m-3" src="../resources/images/home.png" alt="Home" onclick="location.href='../index.html'">
+            <img class="img-fluid mx-auto d-block my-3" src="../resources/images/hkyouma.png" alt="Kyouin" onclick="location.href='https://t.me/HKyouma'">
+        </div>
+    </div>
+</body>
+</html>

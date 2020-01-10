@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divergence Shifter - Home</title>
+
+    <meta name="author" content="Kyouin">
+    <meta name="description" content="Sede di progetti di traduzione delle visual novel di Steins;Gate.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <meta property="og:title" content="Divergence Shifter"/>
+    <meta property="og:description" content="Sede di progetti di traduzione in italiano di Steins;Gate." />
+    <meta property="og:url" content="https://divergenceshifter.github.io"/>
+    <meta property="og:type" content="website"/>
+
+    <link rel="icon" href="resources/images/divergenceshifter_icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+<body onload="onLoad()">
+    <!--  Track to be streamed in background  -->
+    <audio autoplay loop id="audio"><source src="resources/sounds/divergenceshifter_snk.mp3" type="audio/mp3"></audio>
+
+    <!--  Useful stuff just to hide everything until load  -->
+    <div style="display: none" id="hide"></div>
+    <script type="text/javascript">document.getElementById("hide").style.display = "block";</script>
+
+    <!--  All the visible stuff  -->
+    <div class="container">
+        <img class="img-fluid mx-auto d-block my-3" src="resources/images/divergenceshifter_logo.png" alt="Logo" onclick="toggleAudio()">
+
+        <div class="text-center">
+            <p>Divergence Shifter nasce come raccolta di traduzioni, concluse o ancora in corso, delle visual novel di Steins;Gate.</p>
+            <p>Le opere e gli strumenti utilizzati nella modifica appartengono ai loro rispettivi creatori.</p>
+            <p>Clicca su un progetto per aprire la relativa pagina.</p>
+
+            <p class="h4 mt-5">Progetti conclusi</p>
+            <img class="img-fluid mx-auto d-block my-3" src="resources/images/octet_logo.png" alt="Octet logo" onclick="location.href='projects/octet.html'">
+
+            <p class="h4 mt-5">Progetti in corso</p>
+            <p class="my-5">. . . prossimamente . . .</p>
+
+            <p class="small my-5">Clicca <u onclick="toggleAudio()">qui</u>, o sul logo, per attivare o disattivare la musica.</p>
+
+            <img class="img-fluid mx-auto d-block my-3" src="resources/images/hkyouma.png" alt="Kyouin" onclick="location.href='https://t.me/HKyouma'">
+        </div>
+    </div>
+</body>
+</html>
